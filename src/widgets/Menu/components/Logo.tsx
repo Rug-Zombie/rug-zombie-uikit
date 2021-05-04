@@ -5,6 +5,7 @@ import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import { HamburgerIcon, HamburgerCloseIcon, LogoIcon as LogoWithText } from "../icons";
 import MenuButton from "./MenuButton";
+const RugZombieLogo = "https://storage.googleapis.com/rug-zombie/RugZombieBanner.png" //TODO switch gcloud url
 
 interface Props {
   isPushed: boolean;
@@ -68,11 +69,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
       </MenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Pancake home page">
-          {innerLogo}
+          <img alt="" src={RugZombieLogo} style={{ width: "164px" }} />
         </StyledLink>
       ) : (
         <StyledLink to={href} aria-label="Pancake home page">
-          {innerLogo}
+          <img alt="" src={RugZombieLogo} style={{ width: "164px" }} />
         </StyledLink>
       )}
     </Flex>
