@@ -1210,7 +1210,7 @@ var templateObject_1$N, templateObject_2$l;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$3.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$3.SUBTLE ? "input" : "backgroundAlt"];
 };
 var StyledButtonMenu = styled__default['default'].div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
 var templateObject_1$M;
@@ -2788,7 +2788,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#000000", backgroundDisabled: "#E9EAEB", backgroundAlt: "#101820", contrast: "#191326", dropdown: "#F6F6F6", invertedContrast: "#FFFFFF", input: "#007737", inputSecondary: "#d7caec", tertiary: "#b4bd00", text: "#b4bd00", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#000000", backgroundDisabled: "#007737", backgroundAlt: "#101820", contrast: "#191326", dropdown: "#007737", invertedContrast: "#007737", input: "#007737", inputSecondary: "#d7caec", tertiary: "#b4bd00", text: "#b4bd00", textDisabled: "#BDC2C4", textSubtle: "#F1F2F1", borderColor: "#007737", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
         blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
