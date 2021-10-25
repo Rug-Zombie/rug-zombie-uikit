@@ -1,7 +1,9 @@
 import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import Text from "../Text/Text";
-import rugzombie from "./svg/rug-zombie.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import RugZombie from "./png/rug-zombie.png";
 
 interface SliderLabelProps {
   progress: string;
@@ -21,16 +23,16 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${rugzombie});
+  background-image: url(${RugZombie});
   cursor: ${getCursorStyle};
-  width: 24px;
+  width: 32px;
   height: 32px;
   filter: ${disabled ? "grayscale(100%)" : "none"};
-  transform: translate(-2px, -2px);
+  transform: translate(-2px, 2px);
   transition: 200ms transform;
 
   &:hover {
-    transform: ${disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)"};
+    transform: ${disabled ? "scale(1) translate(-2px, 2px)" : "scale(1.1) translate(-3px, 2px)"};
   }
 `;
 
