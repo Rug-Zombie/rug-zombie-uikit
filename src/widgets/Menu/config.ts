@@ -17,127 +17,74 @@ export const status = {
 
 export const links = [
   {
-    label: "Home",
-    icon: "HomeIcon",
-    href: "/",
+    label: 'Home',
+    icon: 'HomeIcon',
+    href: '/home',
   },
   {
-    label: "Trade",
-    icon: "TradeIcon",
+    label: 'Graves',
+    icon: 'GravesIcon',
+    href: '/graves',
+  },
+  {
+    label: 'Tombs',
+    icon: 'TombsIcon',
+    href: '/tombs',
+  },
+  {
+    label: 'Spawning Pools',
+    icon: 'SpawningPoolIcon',
+    href: '/spawning_pools'
+  },
+  {
+    label: 'Mausoleum (BETA)',
+    icon: 'MausoleumIcon',
+    href: '/mausoleum',
+  },
+  {
+    label: 'Graveyard',
+    icon: 'GraveyardIcon',
+    href: '/graveyard'
+  },
+  {
+    label: 'Catacombs',
+    icon: 'CatacombsIcon',
+    href: '/catacombs'
+  },
+  {
+    label: 'Profile',
+    icon: 'ProfileIcon',
+    href: '/profile'
+  },
+  {
+    label: 'Referral Program',
+    icon: 'ReferralIcon',
     items: [
       {
-        label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
-      },
-      {
-        label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        label: 'In development',
+        href: '/',
       },
     ],
   },
   {
-    label: "Farms",
-    icon: "FarmIcon",
-    href: "/farms",
-    status: status.LIVE,
-  },
-  {
-    label: "Pools",
-    icon: "PoolIcon",
-    href: "/syrup",
-  },
-  {
-    label: "Lottery",
-    icon: "TicketIcon",
-    href: "/lottery",
-  },
-  {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
-    label: "Team Battle",
-    icon: "TeamBattleIcon",
-    href: "/competition",
-    status: status.SOON,
-  },
-  {
-    label: "Profile & Teams",
-    icon: "GroupsIcon",
-    status: status.LIVE,
+    label: 'More',
+    icon: 'MoreIcon',
     items: [
       {
-        label: "Leaderboard",
-        href: "/teams",
-        status: status.NEW,
+        label: 'Contact',
+        href: 'https://rugzombie.gitbook.io/docs/feedback-suggestions-and-bug-bounty',
       },
       {
-        label: "YourProfile",
-        href: "/",
-      },
-    ],
-    calloutClass: "rainbow",
-  },
-  {
-    label: "Info",
-    icon: "InfoIcon",
-    items: [
-      {
-        label: "Overview",
-        href: "https://pancakeswap.info",
+        label: 'Github',
+        href: 'https://github.com/Rug-Zombie',
       },
       {
-        label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
-      },
-      {
-        label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
-      },
-      {
-        label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
+        label: 'Docs',
+        href: 'https://rugzombie.gitbook.io/docs/',
       },
     ],
   },
-  {
-    label: "IFO",
-    icon: "IfoIcon",
-    items: [
-      {
-        label: "Next",
-        href: "/ifo",
-      },
-      {
-        label: "History",
-        href: "/ifo/history",
-      },
-    ],
-  },
-  {
-    label: "More",
-    icon: "MoreIcon",
-    items: [
-      {
-        label: "Voting",
-        href: "https://voting.pancakeswap.finance",
-      },
-      {
-        label: "Github",
-        href: "https://github.com/pancakeswap",
-      },
-      {
-        label: "Docs",
-        href: "https://docs.pancakeswap.finance",
-      },
-      {
-        label: "Blog",
-        href: "https://pancakeswap.medium.com",
-      },
-    ],
-  },
-];
+]
 
 export const socials = [
   {
