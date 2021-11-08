@@ -1,24 +1,29 @@
 import styled, { DefaultTheme } from "styled-components";
-import { Variant, variants } from "../Button/types";
+import { space } from "styled-system";
+import { variants } from "../Button/types";
 
-type StyledButtonMenuProps = {
-  variant: Variant;
+interface StyledButtonMenuProps extends ButtonMenuProps {
   theme: DefaultTheme;
-};
+}
 
 const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "input" : "backgroundAlt"];
+  return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
 };
 
-const StyledButtonMenu = styled.div<{ variant: Variant }>`
+const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
+  return theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
+};
+
+const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
   background-color: ${getBackgroundColor};
   border-radius: 16px;
   display: inline-flex;
-
+  border: 1px solid ${getBorderColor};
   & > button + button,
   & > a + a {
     margin-left: 2px; // To avoid focus shadow overlap
   }
+  ${space}
 `;
 
 export default StyledButtonMenu;
