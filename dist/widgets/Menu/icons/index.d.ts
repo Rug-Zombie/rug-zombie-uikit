@@ -28,3 +28,6 @@ export { default as GraveyardIcon } from "./Graveyard";
 export { default as DataLabIcon } from "./DataLab";
 export { default as CatacombsIcon } from "./Catacombs";
 export { default as BlackMarketIcon } from "./BlackMarket";
+export { default as ExchangeIcon } from "./Exchange";
+export { default as SharkTankIcon } from "./SharkTank";
+export { default as CampFireIcon } from "./CampFire";

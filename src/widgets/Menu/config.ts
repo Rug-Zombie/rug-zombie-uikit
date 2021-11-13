@@ -37,6 +37,11 @@ export const links = [
     href: '/spawning_pools'
   },
   {
+    label: 'Shark Tank',
+    icon: 'CampFireIcon',
+    href: '/spawning_pools'
+  },
+  {
     label: 'Mausoleum (BETA)',
     icon: 'MausoleumIcon',
     href: '/mausoleum',
