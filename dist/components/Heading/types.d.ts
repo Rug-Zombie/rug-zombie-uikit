@@ -6,15 +6,15 @@ export declare const tags: {
     H5: string;
     H6: string;
 };
-export declare const sizes: {
+export declare const scales: {
     readonly MD: "md";
     readonly LG: "lg";
     readonly XL: "xl";
     readonly XXL: "xxl";
 };
 export declare type Tags = typeof tags[keyof typeof tags];
-export declare type Sizes = typeof sizes[keyof typeof sizes];
+export declare type Scales = typeof scales[keyof typeof scales];
 export interface HeadingProps {
     as?: Tags;
-    size?: Sizes;
+    scale?: Scales;
 }

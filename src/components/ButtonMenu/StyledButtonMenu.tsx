@@ -1,6 +1,7 @@
 import styled, { DefaultTheme } from "styled-components";
 import { space } from "styled-system";
 import { variants } from "../Button/types";
+import { ButtonMenuProps } from "./types";
 
 interface StyledButtonMenuProps extends ButtonMenuProps {
   theme: DefaultTheme;

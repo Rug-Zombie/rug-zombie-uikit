@@ -8,5 +8,5 @@ export default {
     { file: pkg.main, format: "cjs" },
     { file: pkg.module, format: "es" },
   ],
-  plugins: [url(), typescript()],
+  plugins: [url(), typescript({resolveJsonModule: true})],
 };
