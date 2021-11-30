@@ -68,12 +68,12 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
-          <img alt="" src={RugZombieLogo} style={{ width: "164px" }} />
+        <StyledLink as="a" href={href} aria-label="RugZombie home page">
+          <img alt="" src={RugZombieLogo} style={{ width: "130px" }} />
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
-          <img alt="" src={RugZombieLogo} style={{ width: "164px" }} />
+        <StyledLink to={href} aria-label="RugZombie home page">
+          <img alt="" src={RugZombieLogo} style={{ width: "130px" }} />
         </StyledLink>
       )}
     </Flex>

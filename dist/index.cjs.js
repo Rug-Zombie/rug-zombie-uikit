@@ -3464,9 +3464,9 @@ var Logo = function (_a) {
         React__default['default'].createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$z, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$A, { width: "24px", color: "textSubtle" }))),
-        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" },
-            React__default['default'].createElement("img", { alt: "", src: RugZombieLogo, style: { width: "164px" } }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Pancake home page" },
-            React__default['default'].createElement("img", { alt: "", src: RugZombieLogo, style: { width: "164px" } })))));
+        isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "RugZombie home page" },
+            React__default['default'].createElement("img", { alt: "", src: RugZombieLogo, style: { width: "130px" } }))) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "RugZombie home page" },
+            React__default['default'].createElement("img", { alt: "", src: RugZombieLogo, style: { width: "130px" } })))));
 };
 var Logo$1 = React__default['default'].memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
 var templateObject_1$d, templateObject_2$6;
@@ -3696,7 +3696,7 @@ var templateObject_1$a;
 var PriceLink = styled__default['default'].a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://app.apeswap.finance/swap?outputCurrency=0x50ba8BF9E34f0F83F96a340387d1d3888BA4B3b5", target: "_blank" },
+    return cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: "https://swap.rugzombie.io/swap?outputCurrency=0x50ba8BF9E34f0F83F96a340387d1d3888BA4B3b5", target: "_blank" },
         React__default['default'].createElement("img", { alt: "zombie icon", src: "https://storage.googleapis.com/rug-zombie/low-hq-logo.png", style: { width: "24px", marginRight: "8px" } }),
         React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }));
 };
