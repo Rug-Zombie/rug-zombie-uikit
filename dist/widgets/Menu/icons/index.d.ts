@@ -31,3 +31,4 @@ export { default as BlackMarketIcon } from "./BlackMarket";
 export { default as ExchangeIcon } from "./Exchange";
 export { default as SharkTankIcon } from "./SharkTank";
 export { default as CampFireIcon } from "./CampFire";
+export { default as BurnGraves } from "./BurnGraves";
