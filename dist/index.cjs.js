@@ -3914,7 +3914,7 @@ var WalletCard = function (_a) {
 };
 var templateObject_1$8, templateObject_2$4;
 
-var HelpLink = styled__default['default'](Link$1)(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
+var HelpLink = styled__default['default'](Link$1)(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n  color: #AE32AA;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n  color: #AE32AA;\n"])));
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React__default['default'].createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
