@@ -1,4 +1,4 @@
-declare type State = {
+type State = {
     [key: string]: boolean;
 };
 declare const useMatchBreakpoints: () => State;

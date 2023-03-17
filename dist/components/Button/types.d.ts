@@ -15,17 +15,17 @@ export declare const variants: {
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
 };
-export declare type Scale = typeof scales[keyof typeof scales];
-export declare type Variant = typeof variants[keyof typeof variants];
+export type Scale = typeof scales[keyof typeof scales];
+export type Variant = typeof variants[keyof typeof variants];
 /**
  * @see https://www.benmvp.com/blog/polymorphic-react-components-typescript/
  */
-export declare type AsProps<E extends ElementType = ElementType> = {
+export type AsProps<E extends ElementType = ElementType> = {
     as?: E;
 };
-export declare type MergeProps<E extends ElementType> = AsProps<E> & Omit<ComponentProps<E>, keyof AsProps>;
-export declare type PolymorphicComponentProps<E extends ElementType, P> = P & MergeProps<E>;
-export declare type PolymorphicComponent<P, D extends ElementType = "button"> = <E extends ElementType = D>(props: PolymorphicComponentProps<E, P>) => ReactElement | null;
+export type MergeProps<E extends ElementType> = AsProps<E> & Omit<ComponentProps<E>, keyof AsProps>;
+export type PolymorphicComponentProps<E extends ElementType, P> = P & MergeProps<E>;
+export type PolymorphicComponent<P, D extends ElementType = "button"> = <E extends ElementType = D>(props: PolymorphicComponentProps<E, P>) => ReactElement | null;
 export interface BaseButtonProps extends LayoutProps, SpaceProps {
     as?: "a" | "button" | typeof Link;
     external?: boolean;
@@ -36,4 +36,4 @@ export interface BaseButtonProps extends LayoutProps, SpaceProps {
     startIcon?: ReactNode;
     endIcon?: ReactNode;
 }
-export declare type ButtonProps<P extends ElementType = "button"> = PolymorphicComponentProps<P, BaseButtonProps>;
+export type ButtonProps<P extends ElementType = "button"> = PolymorphicComponentProps<P, BaseButtonProps>;

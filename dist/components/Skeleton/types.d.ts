@@ -7,8 +7,8 @@ export declare const variant: {
     readonly RECT: "rect";
     readonly CIRCLE: "circle";
 };
-export declare type Animation = typeof animation[keyof typeof animation];
-export declare type Variant = typeof variant[keyof typeof variant];
+export type Animation = typeof animation[keyof typeof animation];
+export type Variant = typeof variant[keyof typeof variant];
 export interface SkeletonProps extends SpaceProps, LayoutProps {
     animation?: Animation;
     variant?: Variant;

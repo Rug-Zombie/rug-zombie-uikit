@@ -1,4 +1,4 @@
-export declare type OverlayProps = {
+export type OverlayProps = {
     show: boolean;
     zIndex?: number;
 };

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-array-index-key */
-import React, { Children, isValidElement, ReactNode } from "react";
+import React, { Children, isValidElement, PropsWithChildren, ReactNode } from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
 import ChevronRightIcon from "../Svg/Icons/ChevronRight";
@@ -51,7 +51,7 @@ const insertSeparators = (items: ReactNode[], separator: BreadcrumbsProps["separ
 
 const DefaultSeparator = <ChevronRightIcon color="currentColor" width="24px" />;
 
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = DefaultSeparator, children }) => {
+const Breadcrumbs: React.FC<PropsWithChildren<BreadcrumbsProps>> = ({ separator = DefaultSeparator, children }) => {
   const validItems = Children.toArray(children).filter((child) => isValidElement(child));
   const items = insertSeparators(validItems, separator);
 

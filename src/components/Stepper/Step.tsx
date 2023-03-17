@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 import Flex from "../Box/Flex";
 import Box from "../Box/Box";
@@ -81,7 +81,7 @@ export const StepNumber = styled.div<StatusProps>`
  * ChildrenLeftWrapper and ChildrenRightWrapper are used on the non mobile version, to force the alternate layout.
  * One of the child is hidden based on the step number.
  */
-export const Step: React.FC<StepProps> = ({ index, status, numberOfSteps = 0, children }) => {
+export const Step: React.FC<PropsWithChildren<StepProps>> = ({ index, status, numberOfSteps = 0, children }) => {
   const isIndexPair = index % 2 === 0;
   return (
     <StyledStep mb={index < numberOfSteps - 1 ? "16px" : 0}>

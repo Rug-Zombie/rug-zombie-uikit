@@ -1,9 +1,9 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import StyledTab from "./StyledTab";
 import { TabProps } from "./types";
 import { Text } from "../Text";
 
-const Tab: React.FC<TabProps> = ({ isActive = false, onClick, children }) => {
+const Tab: React.FC<PropsWithChildren<TabProps>> = ({ isActive = false, onClick, children }) => {
   return (
     <StyledTab
       onClick={onClick}

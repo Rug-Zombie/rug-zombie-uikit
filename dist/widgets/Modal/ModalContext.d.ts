@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { Handler } from "./types";
 interface ModalsContext {
     onPresent: (node: React.ReactNode, key?: string) => void;
@@ -6,5 +6,5 @@ interface ModalsContext {
     setCloseOnOverlayClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export declare const Context: React.Context<ModalsContext>;
-declare const ModalProvider: React.FC;
+declare const ModalProvider: React.FC<PropsWithChildren>;
 export default ModalProvider;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 import { ThemedProps } from "./types";
 
@@ -8,12 +8,13 @@ const StepperWrapper = styled.div<ThemedProps>`
   width: fit-content;
 `;
 
-const Stepper: React.FC = ({ children }) => {
+const Stepper: React.FC<PropsWithChildren> = ({ children }) => {
   const numberOfSteps = React.Children.count(children);
   return (
     <StepperWrapper>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
+          // @ts-ignore
           return React.cloneElement(child, { numberOfSteps });
         }
         return child;
