@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import noop from "lodash/noop";
+import noop from "lodash/noop.js";
 /* eslint-disable import/no-unresolved */
 import { Meta } from "@storybook/react/types-6-0";
 import Alert from "./Alert";

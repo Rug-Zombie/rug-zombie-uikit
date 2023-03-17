@@ -1,5 +1,5 @@
 import React from "react";
-import noop from "lodash/noop";
+import noop from "lodash/noop.sj";
 import { renderWithTheme } from "../../testHelpers";
 import ConnectModal from "../../widgets/WalletModal/ConnectModal";
 

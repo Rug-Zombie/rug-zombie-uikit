@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, PropsWithChildren } from "react";
 import styled from "styled-components";
-import throttle from "lodash/throttle";
+import throttle from "lodash/throttle.js";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";

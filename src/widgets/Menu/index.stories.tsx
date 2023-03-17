@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import noop from "lodash/noop";
+import noop from "lodash/noop.js";
 import { BrowserRouter, MemoryRouter } from "react-router-dom";
 import Flex from "../../components/Box/Flex";
 import Heading from "../../components/Heading/Heading";

@@ -1,5 +1,5 @@
 import React from "react";
-import uniqueId from "lodash/uniqueId";
+import uniqueId from "lodash/uniqueId.js";
 import Svg from "../../../components/Svg/Svg";
 import { SvgProps } from "../../../components/Svg/types";
 

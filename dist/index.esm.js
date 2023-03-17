@@ -1,12 +1,12 @@
 import React, { isValidElement, cloneElement, Children, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
 import styled, { keyframes, css, useTheme, ThemeProvider, createGlobalStyle } from 'styled-components';
 import { space, typography, variant as variant$1, layout, background, border, position, flexbox } from 'styled-system';
-import get from 'lodash/get';
-import uniqueId from 'lodash/uniqueId';
-import noop from 'lodash/noop';
-import debounce from 'lodash/debounce';
+import get from 'lodash/get.js';
+import uniqueId from 'lodash/uniqueId.js';
+import noop from 'lodash/noop.js';
+import debounce from 'lodash/debounce.js';
 import { usePopper } from 'react-popper';
-import throttle from 'lodash/throttle';
+import throttle from 'lodash/throttle.js';
 import { Link as Link$2, NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import noop from "lodash/noop";
+import noop from "lodash/noop.js";
 import { renderWithTheme } from "../../testHelpers";
 import { Modal } from "../../widgets/Modal";
 

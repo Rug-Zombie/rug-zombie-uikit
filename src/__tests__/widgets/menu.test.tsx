@@ -1,5 +1,5 @@
 import React from "react";
-import noop from "lodash/noop";
+import noop from "lodash/noop.js";
 import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
 import { Menu, menuConfig, LangType } from "../../widgets/Menu";

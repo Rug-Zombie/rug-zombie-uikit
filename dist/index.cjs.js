@@ -3,12 +3,12 @@
 var React = require('react');
 var styled = require('styled-components');
 var styledSystem = require('styled-system');
-var get = require('lodash/get');
-var uniqueId = require('lodash/uniqueId');
-var noop = require('lodash/noop');
-var debounce = require('lodash/debounce');
+var get = require('lodash/get.js');
+var uniqueId = require('lodash/uniqueId.js');
+var noop = require('lodash/noop.js');
+var debounce = require('lodash/debounce.js');
 var reactPopper = require('react-popper');
-var throttle = require('lodash/throttle');
+var throttle = require('lodash/throttle.js');
 var reactRouterDom = require('react-router-dom');
 var reactTransitionGroup = require('react-transition-group');
 

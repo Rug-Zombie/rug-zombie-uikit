@@ -1,5 +1,5 @@
 import { useMemo, useReducer, useEffect, ReactNode, useCallback } from "react";
-import noop from "lodash/noop";
+import noop from "lodash/noop.js";
 
 import {
   ColumnByNamesType,
