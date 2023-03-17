@@ -3,7 +3,7 @@
   "version": "0.29.3",
   "description": "Set of UI components for RugZombie projects",
   "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.cjs.js",
   "type": "module",
   "types": "dist/index.d.ts",
   "files": [
