@@ -1,12 +1,8 @@
 import React, { isValidElement, cloneElement, Children, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
 import styled, { keyframes, css, useTheme, ThemeProvider, createGlobalStyle } from 'styled-components';
 import { space, typography, variant as variant$1, layout, background, border, position, flexbox } from 'styled-system';
-import get from 'lodash/get.js';
-import uniqueId from 'lodash/uniqueId.js';
-import noop from 'lodash/noop.js';
-import debounce from 'lodash/debounce.js';
+import _ from 'lodash';
 import { usePopper } from 'react-popper';
-import throttle from 'lodash/throttle.js';
 import { Link as Link$2, NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -64,7 +60,7 @@ function __makeTemplateObject(cooked, raw) {
 }
 
 var getThemeValue = function (path, fallback) { return function (theme) {
-    return get(theme, path, "".concat(fallback));
+    return _.get(theme, path, "".concat(fallback));
 }; };
 
 var rotate$1 = keyframes(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
@@ -318,7 +314,7 @@ var Icon$1B = function (props) {
 };
 
 var Icon$1A = function (props) {
-    var id = uniqueId("svg");
+    var id = _.uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
         React.createElement("g", { clipPath: "url(#".concat(id, ")") },
             React.createElement("rect", { width: "32", height: "40", rx: "5.33333", transform: "matrix(-0.866025 -0.5 -0.5 0.866025 65.6667 24.29)", fill: "#7645D9" }),
@@ -742,7 +738,7 @@ var Icon$12 = function (props) {
 };
 
 var Icon$11 = function (props) {
-    var id = uniqueId("svg");
+    var id = _.uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
         React.createElement("g", { clipPath: "url(#".concat(id, ")") },
             React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M44.4825 9.78846C44.9985 10.9575 44.934 12.0841 44.3506 13.0946C43.7672 14.105 42.8238 14.7242 41.5534 14.8619C40.2449 15.0037 38.5223 14.6345 36.5148 13.4755C34.5072 12.3164 33.3262 11.0092 32.7948 9.80511C32.2788 8.63603 32.3433 7.50943 32.9267 6.49898C33.5101 5.48854 34.4535 4.86941 35.7239 4.73171C37.0324 4.5899 38.755 4.95904 40.7625 6.1181C42.7701 7.27716 43.9511 8.58438 44.4825 9.78846ZM46.7339 8.79481C45.9315 6.97669 44.3045 5.3214 41.993 3.98688C39.6815 2.65235 37.4345 2.07098 35.4588 2.28512C33.445 2.50338 31.7896 3.54667 30.7955 5.26852C29.8014 6.99038 29.7255 8.94565 30.5434 10.7988C31.3458 12.6169 32.9728 14.2722 35.2843 15.6067C37.5958 16.9412 39.8428 17.5226 41.8185 17.3085C43.8323 17.0902 45.4877 16.0469 46.4818 14.325C47.4759 12.6032 47.5518 10.6479 46.7339 8.79481Z", fill: "#FFAF00" }),
@@ -804,7 +800,7 @@ var Icon$X = function (props) {
 };
 
 var Icon$W = function (props) {
-    var id = uniqueId("svg");
+    var id = _.uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
         React.createElement("g", { clipPath: "url(#".concat(id, ")") },
             React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M43.1934 10.6907C44.0412 9.92381 45.4 10.3246 45.6959 11.4288C45.9144 12.2444 45.4304 13.0827 44.6148 13.3012L38.4955 14.9409L43.1934 10.6907ZM49.112 10.5134C48.1317 6.85481 43.6295 5.52698 40.8207 8.06806L31.0187 16.9358C29.5584 18.2569 30.8604 20.6481 32.7625 20.1385L45.5302 16.7174C48.2324 15.9933 49.8361 13.2157 49.112 10.5134Z", fill: "#7645D9" }),
@@ -835,7 +831,7 @@ var Icon$W = function (props) {
 };
 
 var Icon$V = function (props) {
-    var id = uniqueId("svg");
+    var id = _.uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 25 25" }, props),
         React.createElement("g", { clipPath: "url(#".concat(id, ")") },
             React.createElement("path", { d: "M15.9617 4.03476C16.5597 2.82143 15.6818 1.40061 14.2254 1.22477C13.0389 1.08149 11.9708 1.84428 11.8399 2.9285L11.3896 6.65764C11.2976 7.41951 11.899 8.11875 12.7328 8.21943C13.3889 8.29864 14.0166 7.98162 14.286 7.435L15.9617 4.03476Z", fill: "#1FC7D4" }),
@@ -2280,9 +2276,9 @@ var useTable = function (columns, data, options) {
             canNext: true,
             canPrev: false,
             // eslint-disable-next-line @typescript-eslint/no-empty-function
-            nextPage: noop,
+            nextPage: _.noop,
             // eslint-disable-next-line @typescript-eslint/no-empty-function
-            prevPage: noop,
+            prevPage: _.noop,
         },
     }), state = _a[0], dispatch = _a[1];
     state.pagination.nextPage = useCallback(function () {
@@ -2660,7 +2656,7 @@ var defaultOptions = {
 var useParticleBurst = function (options) {
     var _a = __assign(__assign({}, defaultOptions), options), selector = _a.selector, numberOfParticles = _a.numberOfParticles, debounceDuration = _a.debounceDuration, imgSrc = _a.imgSrc, disableWhen = _a.disableWhen, particleOptions = _a.particleOptions;
     var makeListener = useCallback(function () {
-        return debounce(function (event) {
+        return _.debounce(function (event) {
             var isDisabled = disableWhen && disableWhen();
             if (!isDisabled) {
                 var node = event.currentTarget;
@@ -3790,7 +3786,7 @@ var Icon$4 = function (props) {
 };
 
 var Icon$3 = function (props) {
-    var id = uniqueId("svg");
+    var id = _.uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("g", { clipPath: "url(#".concat(id, ")") },
             React.createElement("path", { d: "M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z", fill: "#3375BB" }),
@@ -4042,7 +4038,7 @@ var Menu = function (_a) {
             }
             refPrevOffset.current = currentOffset;
         };
-        var throttledHandleScroll = throttle(handleScroll, 200);
+        var throttledHandleScroll = _.throttle(handleScroll, 200);
         window.addEventListener("scroll", throttledHandleScroll);
         return function () {
             window.removeEventListener("scroll", throttledHandleScroll);

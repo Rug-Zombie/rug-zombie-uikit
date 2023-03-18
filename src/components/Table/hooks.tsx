@@ -1,5 +1,5 @@
 import { useMemo, useReducer, useEffect, ReactNode, useCallback } from "react";
-import noop from "lodash/noop.js";
+import _ from "lodash";
 
 import {
   ColumnByNamesType,
@@ -369,9 +369,9 @@ export const useTable = <T extends DataType>(
       canNext: true,
       canPrev: false,
       // eslint-disable-next-line @typescript-eslint/no-empty-function
-      nextPage: noop,
+      nextPage: _.noop,
       // eslint-disable-next-line @typescript-eslint/no-empty-function
-      prevPage: noop,
+      prevPage: _.noop,
     },
   });
 

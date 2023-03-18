@@ -1,5 +1,5 @@
 import React from "react";
-import noop from "lodash/noop.js";
+import _ from "lodash";
 import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
 import { Menu, menuConfig, LangType } from "../../widgets/Menu";
@@ -28,12 +28,12 @@ it("renders correctly", () => {
     <BrowserRouter>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
-        login={noop}
-        logout={noop}
+        login={_.noop}
+        logout={_.noop}
         isDark={false}
-        toggleTheme={noop}
+        toggleTheme={_.noop}
         langs={langs}
-        setLang={noop}
+        setLang={_.noop}
         currentLang="EN"
         cakePriceUsd={0.23158668932877668}
         links={menuConfig}

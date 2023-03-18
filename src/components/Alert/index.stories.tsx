@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import noop from "lodash/noop.js";
+import _ from "lodash";
 /* eslint-disable import/no-unresolved */
 import { Meta } from "@storybook/react/types-6-0";
 import Alert from "./Alert";
@@ -43,7 +43,7 @@ export const Default: React.FC = () => {
   );
 };
 
-const handleClick = noop;
+const handleClick = _.noop;
 
 export const WithHandler: React.FC = () => {
   return (

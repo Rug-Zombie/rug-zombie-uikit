@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, PropsWithChildren } from "react";
 import styled from "styled-components";
-import throttle from "lodash/throttle.js";
+import _ from "lodash";
 import Overlay from "../../components/Overlay/Overlay";
 import Flex from "../../components/Box/Flex";
 import { useMatchBreakpoints } from "../../hooks";
@@ -102,7 +102,7 @@ const Menu: React.FC<PropsWithChildren<NavProps>> = ({
       }
       refPrevOffset.current = currentOffset;
     };
-    const throttledHandleScroll = throttle(handleScroll, 200);
+    const throttledHandleScroll = _.throttle(handleScroll, 200);
 
     window.addEventListener("scroll", throttledHandleScroll);
     return () => {

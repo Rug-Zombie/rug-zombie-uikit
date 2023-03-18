@@ -1,4 +1,4 @@
-import { capitalize } from "lodash";
+import _ from "lodash";
 import React, { useState } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import styled from "styled-components";
@@ -37,7 +37,7 @@ export const Default: React.FC = () => {
               {Object.values(scales).map((scale) => {
                 return (
                   <Button key={scale} variant={variant} scale={scale} mr="8px">
-                    {`${capitalize(variant)} ${scale.toUpperCase()}`}
+                    {`${_.capitalize(variant)} ${scale.toUpperCase()}`}
                   </Button>
                 );
               })}

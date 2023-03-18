@@ -1,5 +1,5 @@
 import React from "react";
-import { capitalize } from "lodash.js";
+import _ from "lodash";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";
 import { CommunityIcon, RemoveIcon } from "../Svg";
@@ -21,21 +21,21 @@ export const Default: React.FC = () => {
               {Object.values(scales).map((scale) => {
                 return (
                   <Tag scale={scale} variant={variant} mr="8px">
-                    {`${capitalize(variant)}: ${scale.toUpperCase()}`}
+                    {`${_.capitalize(variant)}: ${scale.toUpperCase()}`}
                   </Tag>
                 );
               })}
               <Tag variant={variant} outline mr="8px">
-                {`${capitalize(variant)} Outline`}
+                {`${_.capitalize(variant)} Outline`}
               </Tag>
               <Tag variant={variant} outline startIcon={<CommunityIcon />} mr="8px">
-                {`${capitalize(variant)} Icon Left`}
+                {`${_.capitalize(variant)} Icon Left`}
               </Tag>
               <Tag variant={variant} outline endIcon={<RemoveIcon />} mr="8px">
-                {`${capitalize(variant)} Icon Right`}
+                {`${_.capitalize(variant)} Icon Right`}
               </Tag>
               <Tag variant={variant} outline startIcon={<CommunityIcon />} endIcon={<RemoveIcon />}>
-                {`${capitalize(variant)} Both`}
+                {`${_.capitalize(variant)} Both`}
               </Tag>
             </Flex>
           </Box>

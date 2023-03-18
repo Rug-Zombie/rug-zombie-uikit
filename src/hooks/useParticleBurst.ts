@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from "react";
-import debounce from "lodash/debounce.js";
+import _ from "lodash";
 
 type ParticleOptions = {
   size?: number;
@@ -86,7 +86,7 @@ const useParticleBurst = (options: Options): { initialize: () => void; teardown:
 
   const makeListener = useCallback(
     () =>
-      debounce(
+      _.debounce(
         (event: MouseEvent) => {
           const isDisabled = disableWhen && disableWhen();
 

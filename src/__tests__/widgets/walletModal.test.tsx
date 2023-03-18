@@ -1,10 +1,10 @@
 import React from "react";
-import noop from "lodash/noop.sj";
+import _ from "lodash";
 import { renderWithTheme } from "../../testHelpers";
 import ConnectModal from "../../widgets/WalletModal/ConnectModal";
 
 it("renders ConnectModal correctly", () => {
-  const { asFragment } = renderWithTheme(<ConnectModal login={noop} />);
+  const { asFragment } = renderWithTheme(<ConnectModal login={_.noop} />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c5 {

@@ -1,5 +1,5 @@
 import React from "react";
-import times from "lodash/times.js";
+import _ from "lodash";
 import Flex from "../Box/Flex";
 import BackgroundImage from "./BackgroundImage";
 import Img from "./Image";
@@ -48,7 +48,7 @@ export const BackgroundResponsive: React.FC = () => {
 export const LazyImages: React.FC = () => {
   return (
     <Flex flexWrap="wrap">
-      {times(40, (index) => (
+      {_.times(40, (index) => (
         <Img
           key={index}
           src={`https://via.placeholder.com/${150 + index}`}
@@ -65,7 +65,7 @@ export const LazyImages: React.FC = () => {
 export const LazyBackgrounds: React.FC = () => {
   return (
     <Flex flexWrap="wrap">
-      {times(40, (index) => (
+      {_.times(40, (index) => (
         <BackgroundImage
           key={index}
           src={`https://via.placeholder.com/${150 + index}`}

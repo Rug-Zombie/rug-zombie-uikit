@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import noop from "lodash/noop.js";
+import _ from "lodash";
 import { BrowserRouter, MemoryRouter } from "react-router-dom";
 import Flex from "../../components/Box/Flex";
 import Heading from "../../components/Heading/Heading";
@@ -21,12 +21,12 @@ const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, langua
 const useProps = () => {
   const [props, setProps] = useState({
     account: "0xbdda50183d817c3289f895a4472eb475967dc980",
-    login: noop,
-    logout: noop,
+    login: _.noop,
+    logout: _.noop,
     isDark: false,
-    toggleTheme: noop,
+    toggleTheme: _.noop,
     langs,
-    setLang: noop,
+    setLang: _.noop,
     currentLang: "EN",
     cakePriceUsd: 0.023158668932877668,
     links,
